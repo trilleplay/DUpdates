@@ -1,0 +1,2 @@
+# DiscordUpdateBot
+Detect Discord Updates!
