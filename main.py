@@ -1,4 +1,5 @@
 import requests
+import random
 import re
 import json
 import time
@@ -9,7 +10,7 @@ webhook_url = ""
 def main():
     oldversion = check_for_updates_once()
     while True:
-        time.sleep(10)
+        time.sleep(random.choice([240, 260, 290, 310]))
         currentversion = check_for_updates()
 
         if oldversion == currentversion:
